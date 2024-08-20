@@ -2,6 +2,7 @@
   "expo": {
     "name": "test1",
     "slug": "test1",
+    "scheme": "test1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,7 +22,14 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "web": {
+        "bundler": "metro"
+      }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-router"
+    ]
   }
 }
